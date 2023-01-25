@@ -13,26 +13,71 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logotip"><img  src="img/Group 313.svg" alt="logo" /></a>
+        <a href="#" class="logotip"><img  src="img/Group 314.svg" alt="logo" /></a>
         <div class="menu">
-        <button class="palki"><img  src="img/carbon_menu.svg" alt="palki"/></button>
-        <a href="#" class="palki"><img  src="img/korzina.svg" alt="korzina"/></a>
+            <button class="palki"><img  src="img/carbon_menu.svg" alt="palki"/></button>
+            <ul>
+                <li><a href="#" class="spisok">Масло</a></li>
+                <li><a href="#" class="spisok">О нас</a></li>
+                <li><a href="#" class="spisok">Отзывы</a></li>
+                <li><a href="#" class="spisok">Оплата и доставка</a></li>
+                <li><a href="#" class="spisok">Контакты</a></li>
+            </ul>
+            <a href="#" class="korzina"><img  src="img/korzina.svg" alt="korzina"/></a>
         </div>
     </header>
 
     <main>
         <h1>hello</h1>
         <section>
-            <img src="img/image (2).png" alt="salat">
-            <h2>Масло “Для салата”</h2>
-            <p class="text">Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат.</p>
-            <div class="kol">
-            <button class="minus"><img src="img/-.svg" alt="minus"></button>
-            <p class="cifra">2</p>
-            <button class="minus"><img src="img/+.svg" alt="plus"></button>
+            <img src="img/image (2).png" alt="salat" class="salat">
+            <div class="divsec">
+                <h2>Масло “Для салата”</h2>
+                <p class="text">Название говорит само за себя. Это идеальная заправка, которая даже скучной и привычной капусте придаст неповторимый вкус и аромат.</p>
+                <div class="kol">
+                <button class="minus"><img src="img/-.svg" alt="minus"></button>
+                <p class="cifra">2</p>
+                <button class="minus"><img src="img/+.svg" alt="plus"></button>
+                </div>
+                <div class="knopki">
+                    <a href="#" class="podr">ПОДРОБНЕЕ</a>
+                    <button class="podr2">В КОРЗИНУ</button>
+                </div>
             </div>
-            <a href="#" class="podr">ПОДРОБНЕЕ</a>
-            <button class="podr2">В КОРЗИНУ</button>
+        </section>
+        <section class="zad23">
+            <h2 class="zad2">Задание 2</h2>
+            <form action="//httpbin.org/post" method="post" name="contact">
+                <input type="hidden" name="form-name" value="contact">
+                <fieldset>
+                    <legend class="leg">Пользовательские данные</legend>
+                    <div>
+                        <label>
+                            Имя преподавателя: 
+                            <input class="pole" type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                        </label>
+                    </div>
+                    <fieldset>
+                        <legend>Пол:</legend>
+                        <label>
+                        <input type="radio" name="stepen" value="No" checked>
+                        Нет
+                        </label>
+                        <label>
+                        <input type="radio" name="stepen" value="Kandidat" required>
+                        Кандидат
+                        </label>
+                        <label>
+                        <input type="radio" name="stepen" value="Professor" required>
+                        Профессор
+                        </label>
+                    </fieldset> 
+                    <div class="buttonsend">
+                        <button class="send" type="submit">
+                            Send  
+                            <img class="strel" src="img/strel.svg" alt="done">
+                        </button>
+                    </div>
         </section>
     </main>
 </body>
